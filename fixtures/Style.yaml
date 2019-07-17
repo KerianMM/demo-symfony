@@ -1,0 +1,5 @@
+App\Entity\Style:
+    style_{1..10}:
+        title: <word()>
+        description: <sentence()>
+        page: <text(600)>

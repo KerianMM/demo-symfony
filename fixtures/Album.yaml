@@ -1,0 +1,5 @@
+App\Entity\Album:
+    album_{1..10}:
+        title: <sentence(3)>
+        nombrePistes: <randomNumber(2)>
+        style: '@style_<current()>'

@@ -1,0 +1,20 @@
+$theme-colors: (
+        "primary": #0074d9,
+        "success": #83d95f,
+        "danger": #ff4136
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+
+body{
+    background-color: $gray-100;
+
+    form{
+        background-color: $gray-500;
+
+        .form-group{
+            background-color: $blue;
+        }
+    }
+}

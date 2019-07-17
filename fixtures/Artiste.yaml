@@ -1,0 +1,5 @@
+App\Entity\Artiste:
+    artiste_{1..10}:
+        nom: <lastName()>
+        prenom: <firstName()>
+        surnom: <word()>
