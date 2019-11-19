@@ -1,7 +1,10 @@
+import $ from 'jquery';
 import Logger from './plugin/logger';
 
-document.addEventListener('DOMContentLoaded', ()=>{
-    Logger.log('test 1');
-    Logger.log('test 2');
-    Logger.log('test 3');
+$(document).ready(function() {
+    let logger = new Logger($);
+
+    logger.log('test 1');
+    logger.log('test 2');
+    logger.log('test 3');
 });

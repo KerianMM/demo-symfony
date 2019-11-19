@@ -1,6 +1,7 @@
-export default new class Logger {
-    constructor(){
+module.exports = class Logger {
+    constructor($){
         this.key = (new Date()).getTime();
+        this.jQuery = $;
     }
 
     get key() {
@@ -9,6 +10,14 @@ export default new class Logger {
 
     set key(key){
         this._key = key;
+    }
+
+    get jQuery() {
+        return this._jQuery;
+    }
+
+    set jQuery(jQuery){
+        this._jQuery = jQuery;
     }
 
     makeMessage(message){
@@ -20,5 +29,6 @@ export default new class Logger {
 
     log(message){
         console.log(this.makeMessage(message));
+        console.log(this.jQuery("h1").html());
     }
-}
+};
